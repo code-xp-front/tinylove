@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit__icon {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #c44c3c;
+    border-radius: 40px;
+}
+
+.benefit__icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("benefit-user-icon.png") no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+.benefit__title {
+    margin: 0 0 1rem;
+}
+
+.benefit__subtitle {
+    color: #B7B9C4;
+    margin: 0 0 1.3rem;
+}
+
+.benefit__text {
+    line-height: 1.3;
+}

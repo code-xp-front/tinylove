@@ -15,7 +15,7 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    background: url("https://cdn.cultofmac.com/wp-content/uploads/2017/07/Scenery-iPhone-6-6s-93-13.07.17-09-56.42b123d4705c412fbc281675c887bf71-780x520.jpg") no-repeat;
+    background: url("hero-background.jpg") no-repeat;
     background-size: 150% 100%;
     background-position: left bottom;
     border-bottom: 6px solid rgb(197, 76, 61);
