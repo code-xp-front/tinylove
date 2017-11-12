@@ -52,7 +52,7 @@ body {
     border-radius: .5rem;
     overflow: auto;
 }
-.component-demo__rendering {
+.components-demo__rendering {
     margin-bottom: -4px;
     border: none;
 }
