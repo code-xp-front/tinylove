@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TinyLove - Style Guide</title>
+    <link rel="stylesheet" href="storybook.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="navbar__project-name">TinyLove Storybook</h1>
+    </header>
+    <aside class="menu">
+        <ul class="menu__summary">
+            <li><a href="#hero">Hero</a></li>
+        </ul>
+    </aside>
+    <main class="container">
+        <section id="hero" class="demo">
+            <h2>Hero</h2>
+            <iframe class="component component__hero" src="../components/hero/hero.html"></iframe>
+            <pre class="demo__code">
+&lt;!-- HTML --&gt;
+&lt;iframe class=&quot;component component__hero&quot; src=&quot;components/hero/hero.html&quot;&gt;&lt;/iframe&gt;
+
+/* CSS */
+.component__hero {
+    height: 40vh;
+}
+@media (min-width: 768px) {
+    .component__hero {
+        height: 60vh;
+    }
+}
+            </pre>
+        </section> 
+    </main>
+    <footer></footer>
+</body>
+</html>

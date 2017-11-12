@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -11,7 +12,7 @@ body {
     justify-content: center;
     position: relative;
     box-sizing: border-box;
-    height: 40vh;
+    height: 100vh;
     width: 100vw;
     text-align: center;
     background: url("https://cdn.cultofmac.com/wp-content/uploads/2017/07/Scenery-iPhone-6-6s-93-13.07.17-09-56.42b123d4705c412fbc281675c887bf71-780x520.jpg") no-repeat;
@@ -46,7 +47,7 @@ body {
 /* tablet */
 @media (min-width: 768px) {
     .hero {
-        height: 60vh;
+        /* height: 60vh; */
         background-size: 150%;
         background-position: right top;
     }
