@@ -3,9 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
     max-width: 1400px;
-    padding: 1rem;
     margin: 0 auto;
 }
 
@@ -19,18 +17,19 @@ body {
     padding: 1rem;
     background: #353535;
 }
-.navbar__project-name {
+.project-name {
     color: white;
     font-size: 2rem;
     line-height: 1;
-    margin: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .menu {
     font-size: 1.3rem;
     box-sizing: border-box;
     width: 20%;
-    padding: 1rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 .components-details__summary,
 .components-details__summary:link,
@@ -39,10 +38,11 @@ body {
 }
 .container {
     width: 80%;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 .components-demo__title {
     color: #353535;
+    margin-top: 0;
 }
 .components-demo__code {
     font-size: 1.3rem;
