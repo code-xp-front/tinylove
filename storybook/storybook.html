@@ -6,13 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TinyLove - Style Guide</title>
     <link rel="stylesheet" href="storybook.css">
-    <script>
-        window.onload = function() {
-            document.querySelectorAll("iframe").forEach(function(iframe) {
-                iframe.style.height = iframe.contentWindow.document.body.offsetHeight + 'px';
-            });
-        }
-    </script>
 </head>
 <body>
     <header class="navbar">
@@ -21,12 +14,13 @@
     <aside class="menu">
         <details class="components-details">
             <summary><a class="components-details__summary" href="#hero">Hero</a></summary>
+            <summary><a class="components-details__summary" href="#benefit">Benefit</a></summary>
         </details>
     </aside>
     <main class="container">
         <section id="hero" class="components-demo">
             <h2 class="components-demo__title">Hero</h2>
-            <iframe class="component component__hero" src="../components/hero/hero.html"></iframe>
+            <iframe class="component-demo__rendering" src="../components/hero/hero.html"></iframe>
             <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__hero&quot; src=&quot;components/hero/hero.html&quot;&gt;&lt;/iframe&gt;
@@ -42,9 +36,9 @@
 }
             </pre>
         </section>
-        <section id="hero" class="components-demo">
-            <h2 class="components-demo__title">Hero</h2>
-            <iframe class="component component__hero" src="../components/benefit/benefit.html"></iframe>
+        <section id="benefit" class="components-demo">
+            <h2 class="components-demo__title">benefit</h2>
+            <iframe class="components-demo__rendering" src="../components/benefit/benefit.html"></iframe>
             <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__benefit&quot; src=&quot;components/benefit/benefit.html&quot;&gt;&lt;/iframe&gt;
@@ -61,5 +55,10 @@
             </pre>
         </section>
     </main>
+    <script>
+        document.querySelectorAll("iframe").forEach(function(iframe) {
+            iframe.style.height = iframe.contentWindow.document.body.offsetHeight + 'px';
+        });
+    </script>
 </body>
 </html>

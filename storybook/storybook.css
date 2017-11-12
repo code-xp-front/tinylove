@@ -52,21 +52,7 @@ body {
     border-radius: .5rem;
     overflow: auto;
 }
-
-
-/* specific component styles */
-.component {
+.component-demo__rendering {
     margin-bottom: -4px;
     border: none;
 }
-
-/* hero */
-/* .component__hero {
-    width: 100%;
-    height: 40vh;
-}
-@media (min-width: 768px) {
-    .component__hero {
-        height: 60vh;
-    }
-} */
