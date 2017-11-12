@@ -12,15 +12,15 @@
         <h1 class="navbar__project-name">TinyLove Storybook</h1>
     </header>
     <aside class="menu">
-        <ul class="menu__summary">
-            <li><a href="#hero">Hero</a></li>
-        </ul>
+        <details class="components-details">
+            <summary><a class="components-details__summary" href="#hero">Hero</a></summary>
+        </details>
     </aside>
     <main class="container">
-        <section id="hero" class="demo">
-            <h2>Hero</h2>
+        <section id="hero" class="components-demo">
+            <h2 class="components-demo__title">Hero</h2>
             <iframe class="component component__hero" src="../components/hero/hero.html"></iframe>
-            <pre class="demo__code">
+            <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__hero&quot; src=&quot;components/hero/hero.html&quot;&gt;&lt;/iframe&gt;
 

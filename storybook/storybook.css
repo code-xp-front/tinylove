@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     padding: 1rem;
-    background: black;
+    background: #353535;
 }
 .navbar__project-name {
     color: white;
@@ -28,24 +28,27 @@ body {
 .menu {
     font-size: 1.3rem;
     box-sizing: border-box;
-    width: 30%;
+    width: 20%;
     padding: 1rem;
     margin-top: 4rem;
 }
-.menu__summary {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+.components-details__summary,
+.components-details__summary:link,
+.components-details__summary:visited {
+    color: #666666;
 }
 .container {
-    width: 70%;
+    width: 80%;
     margin-top: 4rem;
 }
-.demo__code {
+.components-demo__title {
+    color: #353535;
+}
+.components-demo__code {
     font-size: 1.3rem;
     padding: 1rem;
-    background: lightgray;
-    border: 2px solid gray;
+    background: #F6F4F4;
+    border: 1px solid #666666;
     border-radius: .5rem;
     overflow: auto;
 }
