@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TinyLove - Style Guide</title>
     <link rel="stylesheet" href="storybook.css">
+    <script>
+        window.onload = function() {
+            document.querySelectorAll("iframe").forEach(function(iframe) {
+                iframe.style.height = iframe.contentWindow.document.body.offsetHeight + "px";
+            });
+        };
+        
+    </script>
 </head>
 <body>
     <header class="navbar">
@@ -57,10 +65,5 @@
             </pre>
         </section>
     </main>
-    <script>
-        document.querySelectorAll("iframe").forEach(function(iframe) {
-            iframe.style.height = iframe.contentWindow.document.body.offsetHeight + 'px';
-        });
-    </script>
 </body>
 </html>
