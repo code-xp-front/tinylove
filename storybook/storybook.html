@@ -7,12 +7,9 @@
     <title>TinyLove - Style Guide</title>
     <link rel="stylesheet" href="storybook.css">
     <script>
-        window.onload = function() {
-            document.querySelectorAll("iframe").forEach(function(iframe) {
-                iframe.style.height = iframe.contentWindow.document.body.offsetHeight + "px";
-            });
-        };
-        
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
     </script>
 </head>
 <body>
@@ -30,7 +27,7 @@
     <main class="container">
         <section id="hero" class="components-demo">
             <h2 class="components-demo__title">Hero</h2>
-            <iframe class="components-demo__rendering" src="../components/hero/hero.html"></iframe>
+            <iframe class="components-demo__rendering" src="../components/hero/hero.html" scrolling="no" onload="resizeIframe(this)"></iframe>
             <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__hero&quot; src=&quot;components/hero/hero.html&quot;&gt;&lt;/iframe&gt;
@@ -48,7 +45,7 @@
         </section>
         <section id="benefit" class="components-demo">
             <h2 class="components-demo__title">Benefit</h2>
-            <iframe class="components-demo__rendering" src="../components/benefit/benefit.html"></iframe>
+            <iframe class="components-demo__rendering" src="../components/benefit/benefit.html" scrolling="no" onload="resizeIframe(this)"></iframe>
             <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__benefit&quot; src=&quot;components/benefit/benefit.html&quot;&gt;&lt;/iframe&gt;
