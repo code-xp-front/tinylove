@@ -3,13 +3,12 @@ body {
     margin: 0;
 }
 
-
-/* components */
 .component {
     margin-bottom: -4px;
     border: none;
 }
 
+/* components
 .component__hero {
     width: 100%;
     height: 40vh;
@@ -18,4 +17,4 @@ body {
     .component__hero {
         height: 60vh;
     }
-}
+}*/
