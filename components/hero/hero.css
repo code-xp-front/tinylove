@@ -11,7 +11,7 @@ body {
     justify-content: center;
     position: relative;
     box-sizing: border-box;
-    height: 40vh;
+    min-height: 40vh;
     width: 100vw;
     text-align: center;
     background: url("hero-background.jpg") no-repeat;
@@ -46,7 +46,7 @@ body {
 /* tablet */
 @media (min-width: 768px) {
     .hero {
-        height: 60vh;
+        min-height: 60vh;
         background-size: 150%;
         background-position: right top;
     }
