@@ -9,8 +9,19 @@
     <script>
         function resizeIframe(iframe) {
             console.dir(iframe);
-            iframe.contentWindow.document.body.style.height = iframe.style.height;
-            iframe.contentWindow.document.body.style.width = iframe.style.width;
+            if (iframe.height) {
+                iframe.contentWindow.document.body.style.height = '100%';
+                iframe.style.height = iframe.height;
+            } else {
+                iframe.style.height = iframe.contentWindow.document.body.style.offsetHeight + 'px';
+            }
+
+            if (iframe.width) {
+                iframe.contentWindow.document.body.style.width = '100%';
+                iframe.style.width = iframe.width;
+            } else {
+                iframe.style.width = iframe.contentWindow.document.body.style.offsetWidth + 'px';
+            }
         }
     </script>
 </head>
