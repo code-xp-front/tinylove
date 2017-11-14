@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="storybook.css">
     <script>
         function resizeIframe(iframe) {
-            console.dir(iframe);
-            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-            iframe.style.width = iframe.contentWindow.document.body.scrollWidth + 'px';
+            console.dir(iframe.contentWindow.document.body.children);
+            iframe.style.height = iframe.contentWindow.document.body.children.scrollHeight + 'px';
+            iframe.style.width = iframe.contentWindow.document.body.children.scrollWidth + 'px';
         }
     </script>
 </head>
