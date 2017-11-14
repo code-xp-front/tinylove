@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="storybook.css">
     <script>
         function resizeIframe(iframe) {
-            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-            iframe.style.width = iframe.contentWindow.document.body.scrollWidth + 'px';
+            iframe.style.height = iframe.contentWindow.document.body.offsetHeight + 'px';
+            iframe.style.width = iframe.contentWindow.document.body.offsetWidth + 'px';
         }
     </script>
 </head>
@@ -36,6 +36,7 @@
 /* CSS */
 .component__hero {
     height: 40vh;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .component__hero {

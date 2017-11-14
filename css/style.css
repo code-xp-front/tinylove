@@ -4,14 +4,16 @@ body {
 }
 
 .component {
+    height: 100vh;
+    width: 100vh;
     margin-bottom: -4px;
     border: none;
 }
 
 /* component hero */
 .component__hero {
-    width: 100%;
     height: 40vh;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .component__hero {
