@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="storybook.css">
     <script>
         function resizeIframe(iframe) {
+            console.dir(iframe);
             iframe.style.height = iframe.contentWindow.document.body.offsetHeight + 'px';
             iframe.style.width = iframe.contentWindow.document.body.offsetWidth + 'px';
         }
