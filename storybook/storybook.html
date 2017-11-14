@@ -9,8 +9,8 @@
     <script>
         function resizeIframe(iframe) {
             console.dir(iframe);
-            iframe.contentWindow.document.body.style.height = iframe.height + 'px';
-            iframe.contentWindow.document.body.style.width = iframe.width + 'px';
+            iframe.contentWindow.document.body.style.height = iframe.style.height;
+            iframe.contentWindow.document.body.style.width = iframe.style.width;
         }
     </script>
 </head>
