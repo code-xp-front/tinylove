@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="storybook.css">
     <script>
         function resizeIframe(iframe) {
-            console.dir(iframe.contentWindow.document.body.children);
-            iframe.style.height = iframe.contentWindow.document.body.children.scrollHeight + 'px';
-            iframe.style.width = iframe.contentWindow.document.body.children.scrollWidth + 'px';
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            iframe.style.width = iframe.contentWindow.document.body.scrollWidth + 'px';
         }
     </script>
 </head>
@@ -51,16 +50,6 @@
             <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__benefit&quot; src=&quot;components/benefit/benefit.html&quot;&gt;&lt;/iframe&gt;
-
-/* CSS */
-.component__hero {
-    height: 40vh;
-}
-@media (min-width: 768px) {
-    .component__hero {
-        height: 60vh;
-    }
-}
             </pre>
         </section>
     </main>

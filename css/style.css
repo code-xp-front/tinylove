@@ -8,7 +8,7 @@ body {
     border: none;
 }
 
-/* components
+/* component hero */
 .component__hero {
     width: 100%;
     height: 40vh;
@@ -17,4 +17,4 @@ body {
     .component__hero {
         height: 60vh;
     }
-}*/
+}
