@@ -1,0 +1,11 @@
+.reasons-to-use {
+    display: flex;
+    flex-direction: column;
+}
+
+.reasons-to-use__conclusion {
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #b03710;
+}
