@@ -8,20 +8,14 @@
     <link rel="stylesheet" href="storybook.css">
     <script>
         function resizeIframe(iframe) {
-            console.dir(iframe);
-            if (iframe.height) {
-                iframe.contentWindow.document.body.style.height = '100%';
-                iframe.style.height = iframe.height;
-            } else {
-                iframe.style.height = iframe.contentWindow.document.body.style.offsetHeight + 'px';
-            }
+            var height = iframe.contentWindow.document.body.children[0].style.height;
+            var width = iframe.contentWindow.document.body.children[0].style.width;
 
-            if (iframe.width) {
-                iframe.contentWindow.document.body.style.width = '100%';
-                iframe.style.width = iframe.width;
-            } else {
-                iframe.style.width = iframe.contentWindow.document.body.style.offsetWidth + 'px';
-            }
+            iframe.contentWindow.document.body.children[0].style.height = '100%';
+            iframe.contentWindow.document.body.children[0].style.width = '100%';
+
+            iframe.style.height = height + px;
+            iframe.style.width = width + px;
         }
     </script>
 </head>
