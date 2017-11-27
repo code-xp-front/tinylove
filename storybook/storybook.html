@@ -13,7 +13,7 @@
                 iframe.style.height = iframe.height;
                 console.log('inside height');
             } else {
-                iframe.style.height = iframe.contentWindow.document.body.style.offsetHeight + 'px';
+                iframe.style.height = iframe.contentWindow.document.body.style.scrollHeight + 'px';
                 console.log('outside height');
             }
 
@@ -22,9 +22,11 @@
                 iframe.style.width = iframe.width;
                 console.log('inside width');
             } else {
-                iframe.style.width = iframe.contentWindow.document.body.style.offsetWidth + 'px';
+                iframe.style.width = iframe.contentWindow.document.body.style.scrollWidth + 'px';
                 console.log('outside width');
             }
+
+            console.log('iframe', iframe);
         }
     </script>
 </head>
