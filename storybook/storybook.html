@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="storybook.css">
     <script>
         function resizeIframe(iframe) {
-            console.dir(iframe);
             if (iframe.height) {
                 iframe.contentWindow.document.body.style.height = '100%';
                 iframe.style.height = iframe.height;
+                console.log('inside if height');
             } else {
                 iframe.style.height = iframe.contentWindow.document.body.style.offsetHeight + 'px';
+                console.log('outside if height');
             }
 
             if (iframe.width) {
                 iframe.contentWindow.document.body.style.width = '100%';
                 iframe.style.width = iframe.width;
+                console.log('inside if width');
             } else {
                 iframe.style.width = iframe.contentWindow.document.body.style.offsetWidth + 'px';
+                console.log('outside if width');
             }
         }
     </script>
@@ -40,7 +43,7 @@
     <main class="container">
         <section id="hero" class="components-demo">
             <h2 class="components-demo__title">Hero</h2>
-            <iframe class="components-demo__rendering" src="../components/hero/hero.html" width="100%" height="40vh" scrolling="no" onload="resizeIframe(this)"></iframe>
+            <iframe class="components-demo__rendering" src="../components/hero/hero.html" width="100%" height="60vh" scrolling="no" onload="resizeIframe(this)"></iframe>
             <pre class="components-demo__code">
 &lt;!-- HTML --&gt;
 &lt;iframe class=&quot;component component__hero&quot; src=&quot;components/hero/hero.html&quot;&gt;&lt;/iframe&gt;
