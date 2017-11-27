@@ -21,9 +21,6 @@
                 iframe.contentWindow.document.body.style.width = '100%';
                 iframe.style.width = iframe.width;
                 console.log('inside width');
-            } else {
-                iframe.style.width = iframe.contentWindow.document.body.style.scrollWidth + 'px';
-                console.log('outside width');
             }
 
             console.log('iframe', iframe);
